@@ -99,8 +99,9 @@ body{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
 }
+
 
 
 
@@ -307,7 +308,7 @@ footer{
 
 
 /* Desktop view */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1030px) {
 
     .nav {
         border:none;
@@ -333,17 +334,20 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        justify-items: start;
+        justify-items: center;
+    }
+
+    #home_image{
+        padding:0 2rem 0 0;
     }
 
     #home_image img{
-        width: 100%;
+        width: 90%;
         height: 90%;
         object-fit: cover;
     }
 
     #home_text{
-        width:85%;
         height: 90%;
         border-top: 1px solid grey;;
         border-bottom: 1px solid grey;
@@ -361,7 +365,7 @@ footer{
         width:40%;
         border: 1px solid grey;
         cursor: pointer;
-        margin-bottom: 3rem;
+        margin:1rem 0 0 0;
     }
 
     #linkToPortfolio:hover {
